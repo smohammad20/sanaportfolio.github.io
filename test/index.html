@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Your Name - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span id="mode-label">Light Mode</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="profile">
+                    <img src="port.jpg" alt="Your Name">
+                <h1>Your Name</h1>
+            </div>
+            <p>Your introduction and general information go here...</p>
+        </section>
+
+        <section id="education">
+            <h2>Education History</h2>
+            <p>Your education details go here...</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work/Volunteer Experience</h2>
+            <p>Your work and volunteer experiences go here...</p>
+        </section>
+   
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mdorvzbv" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="telephone">Telephone Number (Optional)</label>
+              <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+              <label for="complaint">Complaint</label>
+              <textarea rows="6" name="complaint" id="complaint" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+            </fieldset>
+            <input type="submit" value="File Complaint">
+          </form>
+
+
+    </section>
+</main>
+    
+</body>
+
+</html>
